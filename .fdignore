@@ -1,0 +1,23 @@
+.DS_Store
+.CFUserTextEncoding
+
+.git/
+node_modules/
+
+/Library/
+/Music/Music/
+/Movies/TV/
+
+*.musiclibrary/
+*.photoslibrary/
+*.tvlibrary/
+
+/.bun/
+/.colima/
+/.config/zed/prompts/
+/.docker/
+/.local/state/
+/.zsh_sessions/
+
+!/Library/Mobile Documents/
+!/Library/Mobile Documents/com~apple~CloudDocs/

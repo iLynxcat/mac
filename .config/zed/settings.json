@@ -1,0 +1,23 @@
+// Zed editor settings
+//   https://zed.dev/docs/configuring-zed
+{
+	// Application
+	"auto_update": false, // Managed by Homebrew
+	// Text
+	"ui_font_family": ".SystemUIFont",
+	"ui_font_size": 14,
+	"buffer_font_family": "JetBrains Mono",
+	"buffer_font_size": 14,
+	"buffer_line_height": "standard",
+	// UI
+	"icon_theme": "Catppuccin Frappé",
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark",
+	},
+	// Editing
+	"vim_mode": true,
+	"disable_ai": true, // Zed's AI is far too eager to "help"
+	"redact_private_values": true, // Avoid accidentally leaking secret keys while screen sharing
+}
