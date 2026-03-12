@@ -35,3 +35,11 @@ if ! brew bundle check --file="$PROFILE_DIR/.homebrew/Brewfile" &>/dev/null; the
 else
     echo 'OK: brew bundle already satisfied'
 fi
+
+# Register docker-compose CLI plugin
+if [[ ! -e "$HOME/.docker/cli-plugins/docker-compose" ]]; then
+    mkdir -p "$HOME/.docker/cli-plugins"
+    ln -s /opt/homebrew/bin/docker-compose "$HOME/.docker/cli-plugins/docker-compose"
+else
+    echo 'OK: docker-compose plugin already linked'
+fi
