@@ -22,9 +22,9 @@ format = ' \[[$branch](green)'
 symbol = ''
 
 [git_status]
-format = '[$staged](yellow)[$modified](red)\]'
-staged = '+'
-modified = '*'
+format = '$staged$modified\]'
+staged = '[+](yellow)'
+modified = '[*](red)'
 ahead = ''
 behind = ''
 diverged = ''
