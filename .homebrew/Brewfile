@@ -1,8 +1,9 @@
 # Developer
 #
-cask "ghostty"     # terminal emulator
-cask "zed"         # text editor (desktop)
-cask "claude-code" # code agent
+cask "ghostty"       # terminal emulator
+cask "zed"           # text editor (desktop)
+cask "intellij-idea" # java IDE
+cask "claude-code"   # code agent
 
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
