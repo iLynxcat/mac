@@ -4,9 +4,6 @@ cask "ghostty"     # terminal emulator
 cask "zed"         # text editor (desktop)
 cask "claude-code" # code agent
 
-cask "dbngin"    # run local databases
-cask "tableplus" # database GUI
-
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
 
@@ -15,6 +12,9 @@ brew "docker-compose" # container orchestration
 brew "colima"         # container backend
                       #   (virtualizes Docker in Linux, exposes it to Docker CLI)
 brew "lazydocker"     # container TUI
+
+cask "dbngin"    # run local databases
+cask "tableplus" # database GUI
 
 tap "oven-sh/bun"
 brew "oven-sh/bun/bun" # js/ts toolkit
@@ -50,12 +50,15 @@ mas "Pages",   id: 361309726 # word
 mas "Numbers", id: 361304891 # excel
 mas "Keynote", id: 361285480 # powerpoint
 
-# Utility
+# Shell
 #
-brew "stow"          # dotfile symlinker
 brew "fd"            # find
 brew "fzf"           # fuzz
 brew "starship"      # shell prompt
-cask "pearcleaner"   # app remover
-cask "tailscale-app" # VPN
-cask "mullvad-vpn"   # commercial "VPN"
+
+# Utility
+#
+brew "stow"           # dotfile symlinker
+cask "pearcleaner"    # app deleter
+cask "tailscale-app"  # VPN
+cask "mullvad-vpn"    # commercial "VPN"
