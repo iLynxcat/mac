@@ -16,6 +16,13 @@
 		"light": "One Light",
 		"dark": "One Dark",
 	},
+	"tab_bar": {
+		"show_tab_bar_buttons": false,
+	},
+	"tabs": {
+		"activate_on_close": "neighbour",
+		"close_position": "left", // Match macOS native UI pattern
+	},
 	// Editing
 	"vim_mode": true,
 	"disable_ai": true, // Zed's AI is far too eager to "help"
