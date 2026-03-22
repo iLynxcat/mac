@@ -1,3 +1,9 @@
+# case-insensitive tab completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# case-insensitive globs, too
+setopt NOCASEGLOB
+
 source <(fzf --zsh) # fuzzy integration
 
 # ctrl-t: fuzzy file search
