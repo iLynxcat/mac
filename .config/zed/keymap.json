@@ -1,0 +1,11 @@
+// Zed keymap
+// docs: https://zed.dev/docs/key-bindings
+[
+	{
+		"context": "Pane",
+		"bindings": {
+			"ctrl-tab": "pane::ActivateNextItem",
+			"ctrl-shift-tab": "pane::ActivatePreviousItem",
+		},
+	},
+]
