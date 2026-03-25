@@ -8,4 +8,16 @@
 			"ctrl-shift-tab": "pane::ActivatePreviousItem",
 		},
 	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-shift-r": "editor::Rename",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"f2": null,
+		},
+	},
 ]
