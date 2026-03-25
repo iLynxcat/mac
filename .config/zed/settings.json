@@ -28,4 +28,5 @@
 	"disable_ai": true, // Zed's AI is far too eager to "help"
 	"redact_private_values": true, // Avoid accidentally leaking secret keys while screen sharing
 	"hard_tabs": true,
+	"tab_size": 4,
 }
