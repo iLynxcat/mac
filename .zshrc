@@ -12,9 +12,12 @@ export FZF_CTRL_T_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --exclude .git'
 bindkey '^G' fzf-cd-widget
 
-alias lg="lazygit"
-alias lazycontainer="lazydocker"
-alias lc="lazydocker"
+alias lg='lazygit'
+alias lazycontainer='lazydocker'
+alias lc=lazycontainer
+
+alias intellij='open -a "IntelliJ IDEA"'
+alias ij=intellij
 
 # Prepare custom prompt
 eval "$(starship init zsh)"
