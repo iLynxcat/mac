@@ -24,6 +24,8 @@ cask "temurin@17" # JDK 17
 cask "temurin@21" # JDK 21
 cask "temurin@25" # JDK 25
 
+cask "font-lora"           # serif font
+cask "font-ibm-plex-sans"  # sans-serif site font
 cask "font-jetbrains-mono" # code font
 
 # Social
