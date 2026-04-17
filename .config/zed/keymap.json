@@ -14,10 +14,4 @@
 			"cmd-shift-r": "editor::Rename",
 		},
 	},
-	{
-		"context": "Editor",
-		"bindings": {
-			"f2": null,
-		},
-	},
 ]
