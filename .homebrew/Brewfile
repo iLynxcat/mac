@@ -16,6 +16,7 @@ brew "lazydocker"     # container TUI
 
 cask "dbngin"    # run local databases
 cask "tableplus" # database GUI
+cask "rapidapi"  # http/api GUI
 
 tap "oven-sh/bun"
 brew "oven-sh/bun/bun" # js/ts toolkit
