@@ -1,4 +1,8 @@
-autoload -Uz compinit && compinit
+mkdir -p "$HOME/.zsh/state"
+
+export HISTFILE="$HOME/.zsh/state/history"
+zstyle ':completion:*' cache-path "$HOME/.zsh/state/compcache"
+autoload -Uz compinit && compinit -d "$HOME/.zsh/state/zcompdump"
 
 # Case-insensitive tab completion & glob matching
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
