@@ -4,7 +4,17 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # case-insensitive globs, too
 setopt NOCASEGLOB
 
-source <(fzf --zsh) # fuzzy integration
+# Navigation
+setopt auto_pushd        # push to history automatically when navigating
+setopt pushd_ignore_dups # ignore dupe paths in history
+
+# Commands
+setopt share_history     # share command history between sessions
+setopt hist_ignore_dups  # ignore sequential dupe commands in history
+setopt hist_ignore_space # skip appending command to history when prefixed with a space
+                         #   (useful when juggling secrets)
+
+source <(fzf --zsh) # load fuzzy integration
 
 # ctrl-t: fuzzy file search
 export FZF_CTRL_T_COMMAND='fd --type f --hidden --exclude .git'
