@@ -5,8 +5,16 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt NOCASEGLOB
 
 # Navigation
+setopt pushdminus # use intuitive order for relative cd (- backwards, + forwards)
+setopt auto_cd    # skip typing `cd` to change cwd
+
 setopt auto_pushd        # push to history automatically when navigating
 setopt pushd_ignore_dups # ignore dupe paths in history
+
+alias -- -='cd -'
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
 
 # Commands
 setopt share_history     # share command history between sessions
