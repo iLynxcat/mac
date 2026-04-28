@@ -62,6 +62,7 @@ brew "starship"      # shell prompt
 
 # Utility
 #
+mas "The Unarchiver", id: 425424353
 brew "stow"           # dotfile symlinker
 cask "pearcleaner"    # app deleter
 cask "helium-browser" # chromium
