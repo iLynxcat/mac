@@ -1,8 +1,8 @@
-# case-insensitive tab completion
 autoload -Uz compinit && compinit
+
+# Case-insensitive tab completion & glob matching
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-# case-insensitive globs, too
-setopt NOCASEGLOB
+setopt no_case_glob
 
 # Navigation
 setopt pushdminus # use intuitive order for relative cd (- backwards, + forwards)
@@ -30,10 +30,10 @@ export FZF_CTRL_T_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --exclude .git'
 bindkey '^G' fzf-cd-widget
 
+# Tool aliases
 alias lg='lazygit'
 alias lazycontainer='lazydocker'
 alias lc=lazycontainer
-
 alias intellij='open -a "IntelliJ IDEA"'
 alias ij=intellij
 
