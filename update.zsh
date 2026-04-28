@@ -21,7 +21,7 @@ if [[ ! -d "$PROFILE_DIR/.git" ]]; then
 fi
 
 # Make our symlinks
-stow --no-folding -R -d "$PROFILE_DIR" .
+stow --no-folding -Rv -d "$PROFILE_DIR" .
 echo '`stow` OK'
 
 # Install casks and formulae from Brewfile
