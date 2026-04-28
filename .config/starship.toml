@@ -1,9 +1,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 #
-# Emulates (however imperfectly) the `apple` theme from oh-my-zsh
+# Based on the `apple` theme from oh-my-zsh
+# See: https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/apple.zsh-theme
 #
 
-format = "[](purple) $directory$git_branch$git_status$character"
+format = "[→](purple)$git_branch$git_status $directory$character"
 add_newline = false
 
 [username]
@@ -13,26 +14,17 @@ disabled = true
 disabled = true
 
 [directory]
-format = '[$path/]()'
-truncation_length = 100
+format = '[$path/](cyan)'
 truncate_to_repo = true
 
 [git_branch]
-format = ' \[[$branch](green)'
+format = ' [$branch](green)'
 symbol = ''
 
 [git_status]
-format = '$staged$modified\]'
+format = '$staged$modified'
 staged = '[+](yellow)'
 modified = '[*](red)'
-ahead = ''
-behind = ''
-diverged = ''
-conflicted = ''
-untracked = ''
-renamed = ''
-deleted = ''
-stashed = ''
 
 [character]
 success_symbol = ''
