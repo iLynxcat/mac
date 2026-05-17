@@ -36,4 +36,9 @@ if [[ ! -e "$HOME/.docker/cli-plugins/docker-compose" ]]; then
     ln -s /opt/homebrew/bin/docker-compose "$HOME/.docker/cli-plugins/docker-compose"
 fi
 
+if [[ ! -d "$HOME/.local/bin" ]]; then
+	echo 'Creating ~/.local/bin'
+	mkdir -p "$HOME/.local/bin"
+fi
+
 echo 'Done'
