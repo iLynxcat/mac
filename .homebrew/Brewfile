@@ -3,7 +3,7 @@
 cask "ghostty"       # terminal emulator
 cask "zed"           # text editor (desktop)
 cask "intellij-idea" # java IDE
-cask "claude-code"   # code agent
+brew "opencode"      # code agent
 
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
