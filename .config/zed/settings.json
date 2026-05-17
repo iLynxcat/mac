@@ -29,4 +29,8 @@
 	"redact_private_values": true, // Avoid accidentally leaking secret keys while screen sharing
 	"hard_tabs": true,
 	"tab_size": 4,
+	"file_types": {
+		"JSON": ["mcmeta"],
+		"Git Ignore": ["packwizignore"],
+	},
 }
