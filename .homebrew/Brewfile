@@ -71,3 +71,4 @@ brew "stow"           # dotfile symlinker
 cask "pearcleaner"    # app deleter
 cask "helium-browser" # chromium
 cask "tailscale-app"  # VPN
+cask "xld"            # audio converter
