@@ -4,6 +4,7 @@ cask "ghostty"       # terminal emulator
 cask "zed"           # text editor (desktop)
 cask "intellij-idea" # java IDE
 brew "opencode"      # code agent
+brew "git"
 
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
@@ -31,7 +32,7 @@ cask "font-jetbrains-mono" # code font
 
 # Libraries
 #
-formula "raylib"
+brew "raylib"
 
 # Social
 #
