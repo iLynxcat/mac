@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Label</key>
-		<string>me.ilynxcat.git-daemon</string>
+		<string>me.ilynxcat.gitd</string>
 		<key>ProgramArguments</key>
 		<array>
 			<string>/opt/homebrew/bin/git</string>
