@@ -14,4 +14,34 @@
 			"cmd-shift-r": "editor::Rename",
 		},
 	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-r": "debugger::Start",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"cmd-.": null,
+		},
+	},
+	{
+		"context": "Editor && vim_mode == normal",
+		"bindings": {
+			"cmd-.": "debugger::Stop",
+		},
+	},
+	{
+		"context": "!Editor",
+		"bindings": {
+			"cmd-.": "debugger::Stop",
+		},
+	},
+	{
+		"context": "Editor && vim_mode != normal",
+		"bindings": {
+			"cmd-.": "editor::ToggleCodeActions",
+		},
+	},
 ]
