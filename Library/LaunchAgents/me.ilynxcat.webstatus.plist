@@ -17,6 +17,6 @@
 		<key>StandardOutPath</key>
 		<string>/tmp/webstatus.log</string>
 		<key>StandardErrorPath</key>
-		<string>/tmp/webstatus.err.log</string>
+		<string>/tmp/webstatus.log</string>
 	</dict>
 </plist>
