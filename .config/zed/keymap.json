@@ -1,5 +1,5 @@
 // Zed keymap
-// docs: https://zed.dev/docs/key-bindings
+//   https://zed.dev/docs/key-bindings
 [
 	{
 		"context": "Pane",
@@ -9,7 +9,7 @@
 		},
 	},
 	{
-		"context": "Editor",
+		"context": "Editor && vim_mode == insert",
 		"bindings": {
 			"cmd-shift-r": "editor::Rename",
 		},
