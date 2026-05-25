@@ -17,11 +17,41 @@
 		"dark": "One Dark",
 	},
 	"tab_bar": {
+		"show_pinned_tabs_in_separate_row": true,
 		"show_tab_bar_buttons": false,
 	},
 	"tabs": {
 		"activate_on_close": "neighbour",
 		"close_position": "left", // Match macOS native UI pattern
+	},
+	"toolbar": {
+		"breadcrumbs": true,
+		"quick_actions": false,
+	},
+	"title_bar": {
+		"show_user_menu": true,
+		"show_sign_in": false,
+		"show_onboarding_banner": false,
+		"show_project_items": true,
+		"show_branch_icon": false,
+	},
+	"notification_panel": {
+		"button": false,
+	},
+	"terminal": {
+		"button": false,
+	},
+	"collaboration_panel": {
+		"button": false,
+	},
+	"git_panel": {
+		"button": false,
+	},
+	"search": {
+		"button": false,
+	},
+	"diagnostics": {
+		"button": true,
 	},
 	// Editing
 	"vim_mode": true,
