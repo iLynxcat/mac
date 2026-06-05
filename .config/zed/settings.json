@@ -26,7 +26,7 @@
 	},
 	"toolbar": {
 		"breadcrumbs": true,
-		"quick_actions": false,
+		"quick_actions": true,
 	},
 	"title_bar": {
 		"show_user_menu": true,
