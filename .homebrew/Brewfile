@@ -43,8 +43,9 @@ cask "dolphin"       # emulator: GCN & Wii
 # Creative
 #
 mas "Pixelmator Pro", id: 1289583905 # raster editor
-cask "sketch"                        # vector editor
-cask "ableton-live-suite"            # digital audio workstation
+cask "downie"             # media downloader
+cask "sketch"             # vector editor
+cask "ableton-live-suite" # digital audio workstation
 
 cask "loopback" # audio router
 cask "obs"      # video streaming & recording
