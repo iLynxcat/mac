@@ -1,3 +1,5 @@
+export HOMEBREW_REQUIRE_TAP_TRUST=1
+
 # Homebrew path
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
