@@ -18,9 +18,6 @@ cask "dbngin"    # run local databases
 cask "tableplus" # database GUI
 cask "rapidapi"  # http/api GUI
 
-tap "oven-sh/bun"
-brew "oven-sh/bun/bun" # js/ts toolkit
-
 cask "temurin@17" # JDK 17
 cask "temurin@21" # JDK 21
 cask "temurin@25" # JDK 25
