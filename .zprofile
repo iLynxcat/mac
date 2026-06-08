@@ -1,11 +1,9 @@
+# Homebrew config
 export HOMEBREW_REQUIRE_TAP_TRUST=1
+export HOMEBREW_AUTO_UPDATE_SECS=43200
 
-# Homebrew path
-eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"    # Homebrew path
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH" # cargo path
+export PATH="$HOME/.local/bin:$PATH"             # .local bin path
 
-export PATH="$(brew --prefix rustup)/bin:$PATH"
-
-export PATH="$HOME/.local/bin:$PATH"
-
-# JDK switcher
-source "$HOME/.zsh/jdk.zsh"
+source "$HOME/.zsh/jdk.zsh"  # JDK switcher

@@ -2,6 +2,7 @@ mkdir -p "$HOME/.zsh/state"
 
 export HISTFILE="$HOME/.zsh/state/history"
 zstyle ':completion:*' cache-path "$HOME/.zsh/state/compcache"
+
 autoload -Uz compinit && compinit -d "$HOME/.zsh/state/zcompdump"
 
 # Case-insensitive tab completion & glob matching
@@ -35,11 +36,9 @@ export FZF_ALT_C_COMMAND='fd --type d --hidden --exclude .git'
 bindkey '^G' fzf-cd-widget
 
 # Tool aliases
-alias lg='lazygit'
-alias lazycontainer='lazydocker'
-alias lc=lazycontainer
-alias intellij='open -a "IntelliJ IDEA"'
-alias ij=intellij
+alias            lg='lazygit'
+alias      intellij='open -a "IntelliJ IDEA"'
+alias            ij='open -a "IntelliJ IDEA"'
 
 # Prepare custom prompt
 eval "$(starship init zsh)"

@@ -12,7 +12,6 @@ brew "docker"         # container CLI
 brew "docker-compose" # container orchestration
 brew "colima"         # container backend
                       #   (virtualizes Docker in Linux, exposes it to Docker CLI)
-brew "lazydocker"     # container TUI
 
 cask "dbngin"    # run local databases
 cask "tableplus" # database GUI
