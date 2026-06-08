@@ -17,7 +17,7 @@ fi
 # Clone dotfiles if not present
 PROFILE_DIR="$HOME/.profile"
 if [[ ! -d "$PROFILE_DIR/.git" ]]; then
-    git clone https://github.com/iLynxcat/dotmac "$PROFILE_DIR"
+    git clone https://github.com/iLynxcat/mac "$PROFILE_DIR"
 fi
 
 # Needed for local git daemon
