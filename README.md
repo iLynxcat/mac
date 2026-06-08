@@ -26,7 +26,7 @@ Dotfiles and easy setup for my personal Mac.
 ## Setup
 
 ```sh
-/bin/zsh -c "$(curl -fsSL https://tangled.org/ilynxcat.me/mac/raw/main/update.zsh)"
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/iLynxcat/dotmac/HEAD/update.zsh)"
 ```
 
 This repository is only maintained for my own personal use. Please don't expect anything to work
