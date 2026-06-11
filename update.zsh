@@ -20,14 +20,6 @@ if [[ ! -d "$PROFILE_DIR/.git" ]]; then
     git clone https://github.com/iLynxcat/mac "$PROFILE_DIR"
 fi
 
-# Needed for local git daemon
-if [[ ! -d '/usr/local/repos' ]]; then
-	echo 'Using sudo to create repositories dir for git daemon. Your password may be requested.'
-	echo 'Please double-check update.zsh to ensure that you trust all commands.'
-	sudo mkdir -p /usr/local/repos
-	sudo chown $(whoami) /usr/local/repos
-fi
-
 # Make our symlinks
 stow --no-folding -Rv -d "$PROFILE_DIR" .
 echo '`stow` OK'
