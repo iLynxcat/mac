@@ -33,10 +33,6 @@
 		"show_sign_in": false,
 		"show_onboarding_banner": false,
 		"show_project_items": true,
-		"show_branch_icon": false,
-	},
-	"notification_panel": {
-		"button": false,
 	},
 	"terminal": {
 		"button": false,
