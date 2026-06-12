@@ -44,4 +44,28 @@
 			"cmd-.": "editor::ToggleCodeActions",
 		},
 	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"cmd-b": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"alt-cmd-b": "workspace::ToggleRightDock",
+		},
+	},
+	{
+		"context": "Workspace",
+		"bindings": {
+			"alt-cmd-b": "workspace::ToggleLeftDock",
+		},
+	},
+	{
+		"context": "Workspace",
+		"unbind": {
+			"cmd-b": "workspace::ToggleLeftDock",
+		},
+	},
 ]
