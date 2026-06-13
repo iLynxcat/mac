@@ -30,9 +30,8 @@ if ! brew bundle check --file="$PROFILE_DIR/.homebrew/Brewfile" &>/dev/null; the
     brew bundle install --file="$PROFILE_DIR/.homebrew/Brewfile"
 fi
 
-if [[ ! -d "$HOME/.local/bin" ]]; then
-	echo 'Creating ~/.local/bin'
-	mkdir -p "$HOME/.local/bin"
-fi
+mkdir -p "$HOME/.local/bin"
+mkdir -p "$HOME/.local/state"
+mkdir -p "$HOME/.local/state/zsh"
 
 echo 'Done'
