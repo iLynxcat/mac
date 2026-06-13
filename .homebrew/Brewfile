@@ -8,6 +8,7 @@ brew "git"
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
 
+brew "container" # containers
 
 cask "dbngin"    # run local databases
 cask "tableplus" # database GUI
