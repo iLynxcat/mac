@@ -8,10 +8,6 @@ brew "git"
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
 
-brew "docker"         # container CLI
-brew "docker-compose" # container orchestration
-brew "colima"         # container backend
-                      #   (virtualizes Docker in Linux, exposes it to Docker CLI)
 
 cask "dbngin"    # run local databases
 cask "tableplus" # database GUI

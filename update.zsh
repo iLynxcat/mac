@@ -30,12 +30,6 @@ if ! brew bundle check --file="$PROFILE_DIR/.homebrew/Brewfile" &>/dev/null; the
     brew bundle install --file="$PROFILE_DIR/.homebrew/Brewfile"
 fi
 
-if [[ ! -e "$HOME/.docker/cli-plugins/docker-compose" ]]; then
-    echo 'Installing docker-compose CLI plugin'
-    mkdir -p "$HOME/.docker/cli-plugins"
-    ln -s /opt/homebrew/bin/docker-compose "$HOME/.docker/cli-plugins/docker-compose"
-fi
-
 if [[ ! -d "$HOME/.local/bin" ]]; then
 	echo 'Creating ~/.local/bin'
 	mkdir -p "$HOME/.local/bin"
