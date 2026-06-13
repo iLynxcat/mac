@@ -1,0 +1,5 @@
+[user]
+	name = Lynx
+	email = lynx@ilynxcat.me
+[core]
+	excludesfile = ~/.config/git/.gitignore_global
