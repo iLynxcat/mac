@@ -3,12 +3,12 @@
 cask "ghostty"       # terminal emulator
 cask "zed"           # text editor (desktop)
 cask "intellij-idea" # java IDE
-brew "git"
 
+brew "git"
 brew "gh"      # GitHub CLI
 brew "lazygit" # git TUI
 
-brew "container" # containers
+brew "container" # docker but not
 
 cask "dbngin"    # run local databases
 cask "tableplus" # database GUI
@@ -28,7 +28,6 @@ brew "raylib"
 
 # Social
 #
-cask "discord"
 cask "signal"
 
 # Game
@@ -39,10 +38,8 @@ cask "dolphin"       # emulator: GCN & Wii
 # Creative
 #
 mas "Pixelmator Pro", id: 1289583905 # raster editor
-cask "downie"             # media downloader
-cask "sketch"             # vector editor
-cask "ableton-live-suite" # digital audio workstation
-
+cask "downie"   # media downloader
+cask "sketch"   # vector editor
 cask "loopback" # audio router
 cask "obs"      # video streaming & recording
 
@@ -62,6 +59,5 @@ brew "starship"      # shell prompt
 #
 mas "The Unarchiver", id: 425424353
 brew "stow"           # dotfile symlinker
-cask "pearcleaner"    # app deleter
 cask "helium-browser" # chromium
 cask "tailscale-app"  # VPN
