@@ -3,6 +3,7 @@
 {
 	// Application
 	"auto_update": false, // Managed by Homebrew
+	"cli_default_open_behavior": "new_window",
 	// Text
 	"ui_font_family": ".SystemUIFont",
 	"ui_font_size": 14,
