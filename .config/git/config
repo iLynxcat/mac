@@ -3,3 +3,5 @@
 	email = lynx@ilynxcat.me
 [core]
 	excludesfile = ~/.config/git/.gitignore_global
+[init]
+	defaultBranch = main
