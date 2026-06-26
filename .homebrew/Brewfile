@@ -22,19 +22,6 @@ cask "font-lora"           # serif font
 cask "font-ibm-plex-sans"  # sans-serif site font
 cask "font-jetbrains-mono" # code font
 
-# Libraries
-#
-brew "raylib"
-
-# Social
-#
-cask "signal"
-
-# Game
-#
-cask "prismlauncher" # minecraft
-cask "dolphin"       # emulator: GCN & Wii
-
 # Creative
 #
 mas "Pixelmator Pro", id: 1289583905 # raster editor
