@@ -1,2 +1,3 @@
 font-family = "JetBrains Mono"
 auto-update = off
+macos-titlebar-style = tabs
