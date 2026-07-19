@@ -68,4 +68,16 @@
 			"cmd-b": "workspace::ToggleLeftDock",
 		},
 	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"alt-shift-f": "editor::Format",
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"cmd-shift-i": "editor::Format",
+		},
+	},
 ]
