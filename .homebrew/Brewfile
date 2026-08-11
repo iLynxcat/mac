@@ -21,6 +21,7 @@ cask "temurin@25" # JDK 25
 cask "font-lora"           # serif font
 cask "font-ibm-plex-sans"  # sans-serif site font
 cask "font-jetbrains-mono" # code font
+cask "font-monaspace"      # code font 2
 
 # Creative
 #

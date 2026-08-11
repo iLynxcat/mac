@@ -7,7 +7,7 @@
 	// Text
 	"ui_font_family": ".SystemUIFont",
 	"ui_font_size": 14,
-	"buffer_font_family": "JetBrains Mono",
+	"buffer_font_family": "Monaspace Xenon NF",
 	"buffer_font_size": 14,
 	"buffer_line_height": "standard",
 	// UI
@@ -40,6 +40,7 @@
 		"show_project_items": true,
 	},
 	"terminal": {
+		"font_family": "Monaspace Argon NF",
 		"button": false,
 	},
 	"collaboration_panel": {
