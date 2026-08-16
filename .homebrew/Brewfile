@@ -1,6 +1,6 @@
 # Developer
 #
-cask "ghostty"       # terminal emulator
+cask "ghostty@tip"   # terminal emulator (bleeding-edge release)
 cask "zed"           # text editor (desktop)
 cask "intellij-idea" # java IDE
 
