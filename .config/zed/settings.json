@@ -2,7 +2,7 @@
 //   https://zed.dev/docs/configuring-zed
 {
 	// Application
-	"auto_update": false, // Managed by Homebrew
+	"auto_update": true,
 	"cli_default_open_behavior": "new_window",
 	"autosave": "on_focus_change",
 	"autoscroll_on_clicks": true,
