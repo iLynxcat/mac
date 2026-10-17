@@ -7,11 +7,9 @@ Dotfiles and easy setup for my personal Mac.
 
 ## Includes
 
-- Apps, tools, and toolchains (_Brewfile_)
-- Automatic updates (_Library/LaunchAgents_)
-- Zed configuration (_.config/zed_)
-- Ghostty configuration (_.config/ghostty_)
-- zsh customizations
+- Apps, tools, and toolchains via Homebrew
+- Editor and terminal configurations
+- Shell customizations
 	- Shell prompt with [Starship](https://starship.rs)
 	- _fzf_ interactive fuzzy commands
 		- `^G` = Interactive _cd_
@@ -20,8 +18,8 @@ Dotfiles and easy setup for my personal Mac.
 	- Navigation conveniences
 	- Case-insensitive path completions and globs
 	- Tool aliases
-	- JDK version switcher (_.zsh/jdk.zsh_)
 	- SSH keys quietly auto-load from Keychain on first shell open
+- Other configuration and utilities (Java, Git)
 
 ## Setup
 
