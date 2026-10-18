@@ -32,7 +32,7 @@ if [[ "$platform" == linux ]] && command -v pacman &>/dev/null; then
 fi
 
 # Check for Stow, it's required to apply packages
-if ! command -v stow &>/dev/null; then
+if ! stow_bin=$(command -v stow); then
 	echo '`stow` command not found.'
 	if (( $brew_available )); then
 		echo 'Install it with Homebrew:'
@@ -101,13 +101,13 @@ done
 
 echo 'Previewing Stow changes for:'
 echo "  ${packages[*]}"
-stow --simulate --verbose --target="$HOME" --dir="$profile" "${packages[@]}"
+"$stow_bin" --simulate --verbose --target="$HOME" --dir="$profile" "${packages[@]}"
 
 printf 'Apply these symlinks? [y/n] '
 read -r answer
 [[ "$answer" == [yY] ]] || exit 0
 
-stow --target="$HOME" --dir="$profile" "${packages[@]}"
+"$stow_bin" --target="$HOME" --dir="$profile" "${packages[@]}"
 
 mkdir -p "$HOME/.local/bin"
 mkdir -p "$HOME/.local/state"
