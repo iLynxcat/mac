@@ -69,9 +69,9 @@ fi
 
 available_packages=()
 
-for path in "$profile"/*/; do
-	[[ -d "$path" ]] || continue # filter: subpath is directory
-	name="${path%/}"             # strip trailing slash
+for dir in "$profile"/*/; do
+	[[ -d "$dir" ]] || continue # filter: subpath is directory
+	name="${dir%/}"             # strip trailing slash
 	name="${name##*/}"           # strip preceding segments (i.e. /Users/name/.profile/)
 
 	available_packages+=("$name")
@@ -101,13 +101,13 @@ done
 
 echo 'Previewing Stow changes for:'
 echo "  ${packages[*]}"
-"$stow_bin" --simulate --verbose --target="$HOME" --dir="$profile" "${packages[@]}"
+"$stow_bin" --no-folding --simulate --verbose --target="$HOME" --dir="$profile" "${packages[@]}"
 
 printf 'Apply these symlinks? [y/N] '
 read -r answer
 [[ "$answer" == [yY] ]] || exit 1
 
-"$stow_bin" --target="$HOME" --dir="$profile" "${packages[@]}"
+"$stow_bin" --no-folding --target="$HOME" --dir="$profile" "${packages[@]}"
 
 mkdir -p "$HOME/.local/bin"
 mkdir -p "$HOME/.local/state"
