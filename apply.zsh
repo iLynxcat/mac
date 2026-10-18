@@ -103,9 +103,9 @@ echo 'Previewing Stow changes for:'
 echo "  ${packages[*]}"
 "$stow_bin" --simulate --verbose --target="$HOME" --dir="$profile" "${packages[@]}"
 
-printf 'Apply these symlinks? [y/n] '
+printf 'Apply these symlinks? [y/N] '
 read -r answer
-[[ "$answer" == [yY] ]] || exit 0
+[[ "$answer" == [yY] ]] || exit 1
 
 "$stow_bin" --target="$HOME" --dir="$profile" "${packages[@]}"
 
